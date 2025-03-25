@@ -16,22 +16,22 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="10dp"
         android:contentDescription="Main Logo"
         android:src="@drawable/MainLogo" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         app:cardCornerRadius="10dp"
-        app:cardElevation="20dp"
+        app:cardElevation="30dp"
         android:background="@drawable/MainLogo"
         >
 
         <LinearLayout
-            android:layout_width="349dp"
-            android:layout_height="343dp"
+            android:layout_width="365dp"
+            android:layout_height="500dp"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="24dp"
@@ -39,24 +39,43 @@
 
 
             <TextView
-                android:id="@+id/loginText"
+                android:id="@+id/SignupText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Sign Up"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="36sp"
                 android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/userlogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:contentDescription="User"
+                android:src="@drawable/Userlogo" />
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/fullname"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
                 android:drawableLeft="@drawable/person_fill_svgrepo_com"
-
                 android:drawablePadding="8dp"
-                android:hint="Username"
+                android:hint="Full Name"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/person_fill_svgrepo_com"
+                android:drawablePadding="8dp"
+                android:hint="Email"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
@@ -75,12 +94,12 @@
                 android:textColorHighlight="@color/cardview_dark_background" />
 
             <Button
-                android:id="@+id/loginButton"
+                android:id="@+id/SignUpButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/rounded_button"
-                android:text="Login"
+                android:text="Sign Up"
                 android:backgroundTint="#ed6f99"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
@@ -93,10 +112,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="Not yet registered? SignUp Now"
+        android:text="Already a user ?"
         android:textSize="14sp"
         android:textAlignment="center"
-        android:id="@+id/signupText"
+        android:id="@+id/loginagain"
         android:textColor="@color/black"
         android:layout_marginBottom="20dp"/>
 
